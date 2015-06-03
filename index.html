@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Campaign Finance Tracker</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="app.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="intro">
+			<div class="explanation">
+				<h1>Campaign Finance Tracker</h1>
+				<p>This app lets you search for congressional and presidential campaign contributions. Search for a candidate name, political committee, or contributor.</p>
+			</div>
+		</div>
+		<hr>
+		<div class="search">	
+			<form class="searchbox" onsubmit="return false;">
+				<input type="text" placeholder='e.g., "Obama" or "Americans for Prosperity"' name="searchTerm" size="50" autofocus required>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+		<div class="results-container">
+			<div class="search-results"></div>
+			<div class="results"></div>
+		</div>
+	</div>
+	<div class="templates hidden">
+		<dl class="result question">
+			<dt>Question</dt>
+				<dd class="question-text"><a href="" target="_blank"></a></dd>
+			<dt>Asked</dt>
+				<dd class="asked-date"></dd>
+			<dt>Viewed</dt>
+				<dd class="viewed"></dd>
+			<dt>Asker</dt>
+				<dd class="asker"></dd>
+		</dl>
+		<div class="error">
+			<p>Uh-oh! Something went wrong with your request. Here's what we know:</p>
+		</div>
+	</div>
+</body>
+</html>
