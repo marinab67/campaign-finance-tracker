@@ -13,7 +13,7 @@ $(document).ready( function() {
 
 var getRequest = function(searchTerm) { 
 
-	var params = {
+	var request = {
 		version: 'v3',  
 		campaign-cycle: 'YYYY', 
 		lname: searchTerm,
